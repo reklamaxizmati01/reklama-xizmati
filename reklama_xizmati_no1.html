@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reklama Xizmati №1 | Target & Reklama</title>
+  <meta name="description" content="Biznesingizni ko‘proq odamlarga ko‘rsating. Sifatli reklama va target xizmatlari.">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Arial,Helvetica,sans-serif;background:#f7f8fc;color:#111827;line-height:1.5}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid #eee}
+    nav{height:72px;display:flex;align-items:center;justify-content:space-between}
+    .logo{font-size:21px;font-weight:800}
+    .logo span{color:#635bff}
+    .navlinks{display:flex;gap:25px;font-weight:600;font-size:14px}
+    .navlinks a:hover{color:#635bff}
+    .menu{display:none;font-size:28px;border:0;background:none}
+    .hero{padding:90px 0 70px;background:linear-gradient(135deg,#eef0ff,#fff 55%,#f5f1ff)}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:55px;align-items:center}
+    .badge{display:inline-block;background:#e7e5ff;color:#4f46e5;padding:8px 14px;border-radius:30px;font-weight:700;font-size:13px;margin-bottom:20px}
+    h1{font-size:clamp(38px,6vw,66px);line-height:1.05;margin-bottom:20px;letter-spacing:-2px}
+    h1 span{color:#635bff}
+    .hero p{font-size:19px;color:#5b6472;max-width:620px;margin-bottom:30px}
+    .buttons{display:flex;gap:13px;flex-wrap:wrap}
+    .btn{padding:14px 22px;border-radius:12px;font-weight:800;display:inline-block;transition:.2s}
+    .btn-primary{background:#635bff;color:white;box-shadow:0 10px 25px rgba(99,91,255,.25)}
+    .btn-primary:hover{transform:translateY(-2px)}
+    .btn-light{background:white;border:1px solid #ddd}
+    .hero-card{background:#111827;color:#fff;border-radius:26px;padding:35px;box-shadow:0 25px 60px rgba(17,24,39,.2)}
+    .hero-card .icon{font-size:50px;margin-bottom:20px}
+    .hero-card h3{font-size:28px;margin-bottom:10px}
+    .hero-card p{font-size:15px;color:#cbd5e1;margin:0}
+    section{padding:75px 0}
+    .section-title{text-align:center;margin-bottom:42px}
+    .section-title h2{font-size:36px;margin-bottom:8px}
+    .section-title p{color:#6b7280}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .card{background:white;border:1px solid #e9e9ef;border-radius:20px;padding:28px;box-shadow:0 8px 25px rgba(20,20,50,.05)}
+    .card .emoji{font-size:35px;margin-bottom:15px}
+    .card h3{font-size:21px;margin-bottom:8px}
+    .card p{color:#697386;font-size:15px}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .step{background:#fff;border-radius:20px;padding:28px;border:1px solid #eee}
+    .number{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:#635bff;color:#fff;font-weight:800;margin-bottom:15px}
+    .portfolio{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .work{height:230px;border-radius:18px;background:linear-gradient(135deg,#171717,#5b5b5b);display:flex;align-items:flex-end;padding:20px;color:#fff;overflow:hidden;position:relative}
+    .work:nth-child(2){background:linear-gradient(135deg,#302b63,#24243e)}
+    .work:nth-child(3){background:linear-gradient(135deg,#141e30,#243b55)}
+    .work strong{font-size:19px}
+    .contact{background:#111827;color:#fff;border-radius:28px;padding:55px}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+    .contact h2{font-size:38px;margin-bottom:12px}
+    .contact p{color:#cbd5e1;margin-bottom:22px}
+    .contact-links{display:grid;gap:12px}
+    .contact-link{background:#1f2937;padding:15px 18px;border-radius:12px;font-weight:700}
+    footer{text-align:center;padding:30px;color:#7b8190;font-size:14px}
+    @media(max-width:800px){
+      .navlinks{display:none}.menu{display:block}
+      .hero-grid,.contact-grid{grid-template-columns:1fr}
+      .cards,.steps,.portfolio{grid-template-columns:1fr}
+      .hero{padding-top:60px}
+      .contact{padding:35px 25px}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <a class="logo" href="#">REKLAMA<span>.NO1</span></a>
+      <div class="navlinks">
+        <a href="#xizmatlar">Xizmatlar</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#qanday">Qanday ishlaymiz?</a>
+        <a href="#aloqa">Aloqa</a>
+      </div>
+      <button class="menu" onclick="alert('Menyu: Xizmatlar • Portfolio • Aloqa')">☰</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="badge">🎯 TARGET | REKLAMA</div>
+        <h1>Biznesingizni <span>ko‘proq</span> odamlarga ko‘rsating.</h1>
+        <p>Sifatli reklama, target va kontent orqali biznesingizning onlayn ko‘rinishini kuchaytiramiz.</p>
+        <div class="buttons">
+          <a class="btn btn-primary" href="https://t.me/xon_6701" target="_blank">📩 Buyurtma berish</a>
+          <a class="btn btn-light" href="#xizmatlar">Xizmatlarni ko‘rish</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="icon">🚀</div>
+        <h3>Reklama Xizmati №1</h3>
+        <p>Instagram va boshqa platformalarda biznesingiz uchun reklama yechimlari.</p>
+        <br>
+        <p>📞 +998 77 670 03 23</p>
+        <p>💬 Telegram: @xon_6701</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="xizmatlar">
+    <div class="container">
+      <div class="section-title">
+        <h2>Xizmatlarimiz</h2>
+        <p>Biznesingizga mos reklama xizmatini tanlang.</p>
+      </div>
+      <div class="cards">
+        <div class="card"><div class="emoji">🎯</div><h3>Target reklama</h3><p>Kerakli auditoriyaga yo‘naltirilgan reklama kampaniyalarini sozlash.</p></div>
+        <div class="card"><div class="emoji">📱</div><h3>Instagram reklama</h3><p>Instagram sahifangiz va mahsulotingiz uchun reklama yechimlari.</p></div>
+        <div class="card"><div class="emoji">🎬</div><h3>Reels & kontent</h3><p>Diqqatni tortadigan video va reklama kontentlarini tayyorlash.</p></div>
+        <div class="card"><div class="emoji">📈</div><h3>Sotuvni oshirish</h3><p>Reklamani murojaat va savdoga olib keladigan tarzda tashkil qilish.</p></div>
+        <div class="card"><div class="emoji">🎨</div><h3>Reklama dizayni</h3><p>Banner, story va boshqa reklama materiallari uchun dizayn.</p></div>
+        <div class="card"><div class="emoji">💬</div><h3>SMM maslahat</h3><p>Profilni rivojlantirish va reklama strategiyasi bo‘yicha maslahat.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="qanday">
+    <div class="container">
+      <div class="section-title">
+        <h2>Qanday ishlaymiz?</h2>
+        <p>Buyurtma berish juda oddiy.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><div class="number">1</div><h3>Murojaat qilasiz</h3><p>Telegram yoki telefon orqali biznesingiz haqida ma’lumot berasiz.</p></div>
+        <div class="step"><div class="number">2</div><h3>Reja tuzamiz</h3><p>Maqsad, auditoriya va reklama formatini birgalikda belgilaymiz.</p></div>
+        <div class="step"><div class="number">3</div><h3>Reklama boshlanadi</h3><p>Kelishilgan reklama ishlari amalga oshiriladi va natijalar kuzatiladi.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="container">
+      <div class="section-title">
+        <h2>Portfolio</h2>
+        <p>Bu yerga keyinchalik qilgan reklama ishlaringizni joylashtiramiz.</p>
+      </div>
+      <div class="portfolio">
+        <div class="work"><strong>Instagram reklama</strong></div>
+        <div class="work"><strong>Target kampaniya</strong></div>
+        <div class="work"><strong>Biznes uchun kontent</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="aloqa">
+    <div class="container">
+      <div class="contact">
+        <div class="contact-grid">
+          <div>
+            <h2>Reklamangizni bugun boshlang.</h2>
+            <p>Biznesingiz haqida yozing — sizga mos reklama xizmatini muhokama qilamiz.</p>
+            <a class="btn btn-primary" href="https://t.me/xon_6701" target="_blank">Telegram orqali yozish</a>
+          </div>
+          <div class="contact-links">
+            <a class="contact-link" href="tel:+998776700323">📞 +998 77 670 03 23</a>
+            <a class="contact-link" href="https://t.me/xon_6701" target="_blank">💬 @xon_6701</a>
+            <a class="contact-link" href="https://instagram.com/reklama.xizmati.no1" target="_blank">📸 Instagram @reklama.xizmati.no1</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>© 2026 Reklama Xizmati №1 — Target | Reklama</footer>
+</body>
+</html>
